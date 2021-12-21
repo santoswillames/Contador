@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <title>My page</title>
 </head>
 <body>
@@ -12,9 +15,14 @@
         <h1>Contador</h1>
         <p>Clique nos botões para alterar o valor entre <span class="positive">10</span> e <span class="negative">-10</span>.</p>
         <div id="counter">
-            <button name="subtrair" id="decrement">-</button>
-            <span id="currentNumber">0</span>
-            <button name="adicionar" id="increment">+</button>
+            <div class="operations">
+                <span id="currentNumber">0</span>
+                <div class="operators">
+                    <button name="adicionar" id="increment"><img src="/assets/img/add_black_24dp.svg" id="adicionar"></button>
+                    <div class="line"></div>
+                    <button name="subtrair" id="decrement"><img src="/assets/img/remove_black_24dp.svg" id="remover"></button>
+                </div>
+            </div>
             <button name="resetar" id="reset">Resetar</button>
         </div>
     </div>
